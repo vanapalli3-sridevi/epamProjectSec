@@ -4,4 +4,5 @@ interface Gift{
     //public int quantity;
  void name();
  int getquantity();
+ int getweight();
 }

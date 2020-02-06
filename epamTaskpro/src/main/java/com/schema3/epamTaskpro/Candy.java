@@ -1,8 +1,8 @@
 package com.schema3.epamTaskpro;
 
 class Candy extends Chocolates implements Gift{
-    Candy(int quantity,int calories){
-    super(quantity,calories);
+    Candy(int quantity,int calories,int wei){
+    super(quantity,calories,wei);
     }
     public void name(){
         System.out.println("Candy is gifed");
@@ -12,5 +12,8 @@ class Candy extends Chocolates implements Gift{
     }
     public String getname(){
          return "Candy";
+    }
+    public int getweight(){
+        return wei;
     }
 }

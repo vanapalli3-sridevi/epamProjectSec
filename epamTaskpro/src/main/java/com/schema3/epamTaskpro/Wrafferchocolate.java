@@ -1,7 +1,7 @@
 package com.schema3.epamTaskpro;
 class Wrafferchocolate extends Chocolates implements Gift{
-    Wrafferchocolate(int quantity,int calories){
-    super(quantity,calories);
+    Wrafferchocolate(int quantity,int calories,int wei){
+    super(quantity,calories,wei);
     }
     public void name(){
         System.out.println("Wrafferchocolate is gifed");
@@ -12,4 +12,7 @@ class Wrafferchocolate extends Chocolates implements Gift{
     public String getname(){
         return "Wrafferchocolate";
    }
+    public int getweight(){
+        return wei;
+    }
 }
